@@ -1,21 +1,19 @@
 # leesfestival data
 
-Als je in deze repo op **festival.json** klikt, en vervolgens rechts op de button **Raw**, krijg je de ruwe data te zien in je browser. De URL daarbij is: `https://raw.githubusercontent.com/mia-mmt2-2324/leesfestival/main/festival.json`. Dit is tevens de URL die je dient te gebruiken in je p5js project:
+Als je in deze repo op **4.5_day.geojson** klikt, en vervolgens rechts op de button **Raw**, krijg je de ruwe data te zien in je browser. De URL daarbij is: `https://raw.githubusercontent.com/mia-mmt2-2324/earthquakes/main/4.5_day.geojson`. Dit is tevens de URL die je dient te gebruiken in je p5js project:
 
 
 ```
 let data;
 
 function preload(){
-    data = loadJSON("https://raw.githubusercontent.com/mia-mmt2-2324/leesfestival/main/festival.json");
+    data = loadJSON("https://raw.githubusercontent.com/mia-mmt2-2324/earthquakes/main/4.5_day.geojson");
 }
 
 function setup(){
-    console.log(data.description); //controleren of de data correct is ingeladen
+    console.log(data.metadata.title); //controleren of de data correct is ingeladen
 }
 ``` 
 
-We hebben zoveel mogelijk de gegevens van de PDF overgenomen. Je ziet echter ook `durationMinutes`, `maxSeats` en `availableSeats` staan. Die fictieve gegevens hebben we zelf eraan toegevoegd zodat er wat meer te visualiseren is :)
-
-`datetime` staat voor de datum+tijdstip voor de aanvang van de activiteit. Zie de [lesstof in GitBook](https://cmd-viscom.gitbook.io/1-2-mmt2/lesprogramma/6-data/data-and-apis/de-data-uit-een-api-toepassen/een-datum-gebruiken-in-je-data) hoe je met deze grote getallen moet omgaan.
+De data is overgenomen van de website https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php en we gebruiken daarvan specifiek de dataset die aardbevingen van een Magnitude van 4.5 en hoger van de afgelopen dag. Omdat deze data uiteraard per dag wijzigt, kan het voorkomen dat er een keer in de data géén aardbeving is geweest; lastig visualiseren dan 😜. We hebben dus een kopie gemaakt van die dataset op een moment dat er veel aardbevingen waren en die opgeslagen in deze repo. Je hoeft dus enkel die externe website raad te plegen als je wat meer informatie nodig hebt, wat alle eigenschappen betekenen etc. 
 
