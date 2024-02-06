@@ -18,5 +18,5 @@ function setup(){
 }
 ``` 
 
-De data is overgenomen van de website https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php en we gebruiken daarvan specifiek de dataset die aardbevingen van een Magnitude van 4.5 en hoger van de afgelopen dag. Omdat deze data uiteraard per dag wijzigt, kan het voorkomen dat er een keer in de data géén aardbeving is geweest; lastig visualiseren dan 😜. We hebben dus een kopie gemaakt van die dataset op een moment dat er veel aardbevingen waren en die opgeslagen in deze repo. Je hoeft dus enkel die externe website raad te plegen als je wat meer informatie nodig hebt, wat alle eigenschappen betekenen etc. 
+De data is overgenomen van de website https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php en we gebruiken daarvan specifiek de dataset die aardbevingen toont van een Magnitude van 4.5 en hoger van de afgelopen dag. Omdat deze data uiteraard per dag wijzigt, kan het voorkomen dat er een keer in de data géén aardbeving is geweest; lastig visualiseren dan 😜. We hebben dus een kopie gemaakt van die dataset op een moment dat er veel aardbevingen waren en die opgeslagen in deze repo. Je hoeft dus enkel die externe website raad te plegen als je wat meer informatie nodig hebt, wat alle eigenschappen betekenen etc. 
 
