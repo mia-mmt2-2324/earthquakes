@@ -1,4 +1,4 @@
-# Earthquake data 5 februari 2024
+# Earthquake data - 5 februari 2024
 
 ![image](https://github.com/mia-mmt2-2324/earthquakes/assets/36117924/18d267b2-969c-4915-b0e8-c4f0e90ae66b)
 
