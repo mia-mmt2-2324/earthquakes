@@ -6,7 +6,7 @@
 Als je in deze repo op [4.5_day.geojson](https://raw.githubusercontent.com/mia-mmt2-2324/earthquakes/main/4.5_day.geojson) klikt, en vervolgens rechts op de button **Raw**, krijg je de ruwe data te zien in je browser. De URL daarbij is: `https://raw.githubusercontent.com/mia-mmt2-2324/earthquakes/main/4.5_day.geojson`. Dit is tevens de URL die je dient te gebruiken in je p5js project:
 
 
-```
+```javascript
 let data;
 
 function preload(){
